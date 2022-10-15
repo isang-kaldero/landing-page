@@ -9,21 +9,27 @@ body {
     color: #1f2937; 
 }
 
+h1, p {
+    margin-bottom: 15px;
+}
+
 a {
     text-decoration: none;
-    color: #f9faf8;   
+    color: #f9faf8;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin: 0 auto;
 }
 
 .dark-blue { background-color: #1f2937; color: #f9faf8 }
+.light-gray { background-color: #e5e7eb; }
+.blue { background-color: #3882f6; color: #f9faf8 ;}
 
 /** Header section **/
 .header {
@@ -37,16 +43,63 @@ a {
     padding-bottom: 0;
 }
 
-.logo {
-    width: 40px;
-    object-fit: cover;    
+button {
+    padding: 8px 20px;
+    background-color: #3882f6;
+    color: #fff;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px; 
+    font-size: 18px;   
+    width: 100%;
 }
+
+.logo {
+    font-family: "Belleza", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+}
+
+.logo img {
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+}
+
+.logo p {
+    display: none;
+}
+
+nav a {
+    font-size: 14px;
+}
+
+nav a::after {
+    content: "|";
+    padding-left: 10px;
+}
+
+nav a.last::after {
+    content: "";
+}
+
 
 /** Second section **/
 .about {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.info {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .about h1 {
@@ -56,8 +109,7 @@ a {
 
 .about-img {
     object-fit: contain;
-    height: 200px;
-    width: 200px;
+    width: 100%;
 }
 
 /** Third section **/
@@ -74,18 +126,73 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-top: 40px;
+    font-size: 16px;
 }
 
 .info-list ul li {            
-    flex: 1 0 180px;
+    flex: 1 0 100%;
     text-align: center;
 }
 
 .info-list img {
-    width: 180px;
-    object-fit: cover;
-    border: 2px solid #1f2937;
-    border-radius: 20px;
+    width: 50%;
+    object-fit: cover;         
+}
+
+/* Third section */
+.quote {
+    font-size: 27px;
+    font-style: italic;
+    max-width: 700px;
+}
+
+.author {
+    font-style: normal;
+    color: #636d7a;
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+
+    .logo p {
+        display: block;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .about-img {
+        width: 350px;
+    }
+
+    .info-list ul {
+        font-size: 14px;
+    }
+
+    .info-list ul li {            
+        flex: 1 0 250px;
+    }    
+
+    .info-list img {
+        width: 160px;
+    }
+
+    .quote {
+        font-size: 32px;
+    }    
+
+    .author {
+        margin-right: 100px;
+    }
+   
 }
