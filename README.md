@@ -1,4 +1,2 @@
 # landing-page
-Image by <a href="https://pixabay.com/users/eommina-1183101/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957063">eommina</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957063">Pixabay</a>
-
-Image by <a href="https://pixabay.com/users/abdulrashid000-27710353/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7347324">Md Abdul Rashid</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7347324">Pixabay</a>
+This is an assignment of The Odin Project. Here we have HTML and CSS, alignment by the mighty power of flexbox. Images are from my poor attempt to draw something.
