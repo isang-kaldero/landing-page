@@ -18,6 +18,18 @@ a {
     color: #f9faf8;
 }
 
+button {
+    padding: 8px 20px;
+    background-color: #3882f6;
+    color: #fff;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px; 
+    font-size: 18px;   
+    width: 100%;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1200px;
     padding-left: 20px;
@@ -31,6 +43,11 @@ a {
 .light-gray { background-color: #e5e7eb; }
 .blue { background-color: #3882f6; color: #f9faf8 ;}
 
+.blue button {
+    border: 1px solid #f9faf8;
+    width: 100%;
+}
+
 /** Header section **/
 .header {
     display: flex;
@@ -41,17 +58,6 @@ a {
 .container.header {
     padding-top: 0;
     padding-bottom: 0;
-}
-
-button {
-    padding: 8px 20px;
-    background-color: #3882f6;
-    color: #fff;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px; 
-    font-size: 18px;   
-    width: 100%;
 }
 
 .logo {
@@ -157,6 +163,19 @@ nav a.last::after {
     font-weight: bold;
 }
 
+/* Fourt section (Call to action) */
+.call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.footer {
+    text-align: center;
+}
+
 @media screen and (min-width: 700px) {
 
     .logo p {
@@ -175,12 +194,10 @@ nav a.last::after {
         width: 350px;
     }
 
-    .info-list ul {
-        font-size: 14px;
-    }
 
     .info-list ul li {            
         flex: 1 0 250px;
+        max-width: 250px;
     }    
 
     .info-list img {
@@ -193,6 +210,10 @@ nav a.last::after {
 
     .author {
         margin-right: 100px;
+    }
+
+    .blue button {
+        width: 20%;
     }
    
 }
